@@ -1,6 +1,6 @@
 # Gemini Voice-to-Voice Chat
 
-A Python implementation of real-time voice conversation with Google's Gemini AI model. This project enables natural, bidirectional voice communication with Gemini, supporting multi-turn conversations and interruptions.
+A Python implementation of real-time voice conversation with Google's Gemini AI model. This project enables natural, bidirectional voice communication with Gemini, supporting multi-turn conversations. This is an improved version of [philschmid's Gemini Voice implementation](https://gist.github.com/philschmid/cb8c98f0781e4e52e5d364ff39e2ccd2) with fixes for turn handling and other improvements.
 
 ## Features
 
@@ -8,8 +8,7 @@ A Python implementation of real-time voice conversation with Google's Gemini AI 
 - 🔊 Real-time voice response playback
 - 💬 Multi-turn conversation support
 - ⚡ Low-latency audio streaming
-- 🎯 Natural turn-taking with interruption handling
-- 🌐 WebSocket-based communication with Gemini API
+- 🎯 WebSocket-based communication with Gemini API
 
 ## Prerequisites
 
@@ -49,7 +48,6 @@ python main.py
 4. The conversation will continue naturally, with support for:
    - Multi-turn dialogue
    - Natural pauses
-   - Interruptions when needed
 
 ## How It Works
 
@@ -59,7 +57,7 @@ The application uses three main components running concurrently:
 2. **Response Processing**: Handles Gemini's responses and manages conversation turns
 3. **Audio Playback**: Plays back Gemini's voice responses in real-time
 
-The WebSocket connection ensures low-latency communication, while the turn-taking system manages natural conversation flow.
+The WebSocket connection ensures low-latency communication for natural conversation flow.
 
 ## Technical Details
 
