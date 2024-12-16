@@ -29,10 +29,12 @@ cd gemini-voice-to-voice
 pip install -r requirements.txt
 ```
 
-3. Create a `.env` file in the project root and add your Gemini API key:
-```env
-GEMINI_API_KEY=your_api_key_here
+3. Copy the example environment file and add your Gemini API key:
+```bash
+cp .env.example .env
 ```
+
+4. Edit `.env` and replace `your_api_key_here` with your actual Gemini API key from https://makersuite.google.com/app/apikey
 
 ## Usage
 
